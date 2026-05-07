@@ -10,6 +10,8 @@ A FastAPI-based REST API that exposes DevOps utility endpoints for system metric
 DevOps-Utilities/
 ├── app/
 │   └── api.py              # FastAPI app definition & route registration
+├── images/
+│   └── image               # Image Handling 
 ├── resources/
 │   └── bucket.py           # Amazon S3 operation create,list,delete  OPTIONAL
 ├── routers/

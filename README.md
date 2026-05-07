@@ -10,6 +10,8 @@ A FastAPI-based REST API that exposes DevOps utility endpoints for system metric
 DevOps-Utilities/
 ├── app/
 │   └── api.py              # FastAPI app definition & route registration
+├── resources/
+│   └── bucket.py           # Amazon S3 operation create,list,delete  OPTIONAL
 ├── routers/
 │   ├── metrics.py          # System metrics router
 │   └── aws.py              # AWS resources router
@@ -83,8 +85,12 @@ The server will start at `http://0.0.0.0:8080` with hot-reload enabled.
 Once the server is running, visit:
 
 - **Swagger UI:** [http://localhost:8080/docs](http://localhost:8080/docs)
+
+![alt text](image-1.png)
+
 - **ReDoc:** [http://localhost:8080/redoc](http://localhost:8080/redoc)
 
+![alt text](image.png)
 ---
 
 ## AWS Setup
@@ -126,3 +132,5 @@ You'll be prompted to enter:
 
 - The `/metrics` endpoint marks the service as **"Service not Healthy"** if CPU usage exceeds **10%**. Adjust the `threshold` value in `services/metrics_service.py` as needed.
 - The `/aws/s3` endpoint classifies buckets as **new** (created within the last 90 days) or **old** (older than 90 days).
+
+![alt text](image-2.png)

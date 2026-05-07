@@ -86,11 +86,11 @@ Once the server is running, visit:
 
 - **Swagger UI:** [http://localhost:8080/docs](http://localhost:8080/docs)
 
-![alt text](image-1.png)
+![alt text](/images/image-1.png)
 
 - **ReDoc:** [http://localhost:8080/redoc](http://localhost:8080/redoc)
 
-![alt text](image.png)
+![alt text](/images/image.png)
 ---
 
 ## AWS Setup
@@ -133,4 +133,4 @@ You'll be prompted to enter:
 - The `/metrics` endpoint marks the service as **"Service not Healthy"** if CPU usage exceeds **10%**. Adjust the `threshold` value in `services/metrics_service.py` as needed.
 - The `/aws/s3` endpoint classifies buckets as **new** (created within the last 90 days) or **old** (older than 90 days).
 
-![alt text](image-2.png)
+![alt text](/images/image-2.png)
